@@ -1,6 +1,25 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12%;
+}
+
+.window {
+    background-color: white;
+    border-radius: 25px;
+    height: 350px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 5px black;
+}
+
 .ball8 {
-    height: 500px;
-    width: 500px;
+    height: 310px;
+    width: 310px;
     border-radius: 50%;
     background-color: black;
     display: flex;
@@ -10,11 +29,21 @@
 
 .whiteCircle {
     background-color: white;
-    height: 200px;
-    width: 200px;
+    height: 110px;
+    width: 110px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: inset 0 0 10px black;
+}
+
+.font {
+    font-size: 90px;
+    font-weight: bold;
+}
+
+.whiteCircle {
+    font-size: 15px;
+    font-weight: bold;
 }

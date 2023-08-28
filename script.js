@@ -1,23 +1,33 @@
-let answers = ['YES!', 
+let cueBall = ['YES!', 
             'Try Again', 
             'No', 
             'Absolutely Not', 
             'Definitely Yes'];
-let startAnswer = '8';
+let startPoint = '8';
+let classFont = 'font';
 
 updateView();
 
 function updateView(){
     document.getElementById("eightball").innerHTML = /*HTML*/ `
-    
-    <div class = "ball8">
-        <div class = "whiteCircle" onclick = "getAnswer()"> ${answer} </div>
+
+    <div class = "window">
+        <div class = "ball8">
+            <div class = "whiteCircle" onclick ="getRandomAnswer()">
+                <div class = "${classFont}">
+                    ${startPoint}
+                </div>
+            </div>
+        </div>
     </div>
     ;`
 }
 
-function getAnswer(){
-    let randomIndex = Math.floor(Math.random() * answers.length);
-    let answer = answers[randomIndex];
-    document.getElementById('whiteCircle').innerText = answer;
+function getRandomAnswer(){
+    let randomIndex = Math.floor(Math.random() * cueBall.length);
+    let cueBallTxt = cueBall.length > 0 ? cueBall[randomIndex] : 'Cash, please'
+    classFont = '';
+    startPoint = cueBallTxt;
+    cueBall.splice(randomIndex, 1);
+    updateView();
 }
