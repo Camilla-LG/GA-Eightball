@@ -18,8 +18,8 @@ h1 {
 .window {
     background-color: white;
     border-radius: 25px;
-    height: 350px;
-    width: 350px;
+    height: fit-content;
+    width: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
