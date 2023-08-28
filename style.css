@@ -3,7 +3,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 12%;
+}
+
+h1 {
+    font-size: 72px;
+    background: -webkit-linear-gradient(top, red , yellow);
+    background: -o-linear-gradient(bottom, red, yellow);
+    background: -moz-linear-gradient(bottom, red, yellow);
+    background: linear-gradient(to top, red , yellow); 
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
 }
 
 .window {

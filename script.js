@@ -11,6 +11,8 @@ updateView();
 function updateView(){
     document.getElementById("eightball").innerHTML = /*HTML*/ `
 
+    <h1> Magic 8ball </h1>
+    
     <div class = "window">
         <div class = "ball8">
             <div class = "whiteCircle" onclick ="getRandomAnswer()">
