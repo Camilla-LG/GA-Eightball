@@ -1,6 +1,7 @@
 body {
     background-color: black;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     /* justify-content:center;
     align-items: center; */
@@ -8,8 +9,8 @@ body {
 
 .main{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between
+    /* flex-direction: row; */
+    /* justify-content: space-around; */
 }
 
 h1 {
@@ -30,8 +31,10 @@ h4{
 
 #inputArea{
     display: flex;
+    justify-self: right;
     justify-content: center;
     align-items: center;
+    padding: 20%;
 }
 
 .window {
@@ -41,6 +44,7 @@ h4{
     width: fit-content;
     display: flex;
     flex-direction: row;
+    justify-self: left;
     justify-content: space-around;
     /* justify-content: center;
     align-items: center; */
